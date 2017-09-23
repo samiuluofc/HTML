@@ -1,16 +1,68 @@
-<!--
-This is how we can do multiline comments
--->
+<!--Most of the comments are taken from W3Schools-->
 
 <!DOCTYPE html>
-<html>
+<!--
+>> The <!DOCTYPE> declaration represents the document type, and 
+helps browsers to display web pages correctly. 
+
+>> The <!DOCTYPE> declaration is not case sensitive.
+>> The above declaration is for HTML-5 (2014).
+
+>> The <html> element defines the whole document.
+>> The <head> element contains meta information about the document.
+>> The visible part of the HTML document is between <body> and </body>.
+
+>> HTML tags are not case sensitive. W3C recommends lowercase in HTML.
+-->
+
+<html lang ="en-US">
+<!--Declaring a language is important for 
+	accessibility applications (screen readers) and search engines-->
+
 <head>
 	<title>Hello World!</title>
 </head>
 <body>
 
-<h1>Heading</h1>
-<p>Paragraph starts: First HTML code</p>
+<!-- 
+	<h1> defines the most important heading. 
+	<h6> defines the least important heading
+-->
+<h1>Heading 1</h1>
+<h2>Heading 2</h2>
+<h3>Heading 3</h3>
+<h4>Heading 4</h4>
+<h5>Heading 5</h5>
+<h6>Heading 6</h6>
+
+<p title="Paragraph title appears as a tooltips when you mouse over the paragraph">
+	Paragraph 1 starts: First HTML code
+</p>
+
+<p>Paragraph 2 starts here...</p>
+
+<img src="multimedia/my_pic.jpg" alt="My pic from Linkedin" width="200" height="300">
+<!-- The source file (src), alternative text (alt). The alt attribute 
+specifies an alternative text to be used, when an image cannot be displayed. 
+The value of the attribute can be read by screen readers. This way, someone 
+"listening" to the webpage, e.g. a blind person, can "hear" the element.
+-->
+
+<br>
+<!-- 
+	HTML elements with no content are called empty elements. 
+	Empty elements do not have an end tag, such as the 
+	<br> element (which indicates a line break). 
+-->
+
+<!--
+The link's destination is specified in the href attribute. 
+Attributes are used to provide additional information about HTML elements.
+All HTML elements can have attributes.
+Attributes usually come in name/value pairs like: name="value".
+-->
+<a href="https://www.linkedin.com/in/samiul-azam-59247b11b/">
+Link to my linked in profile</a>
 
 </body>
 </html>
