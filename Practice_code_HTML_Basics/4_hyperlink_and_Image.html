@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hyperlinks and Images</title>
+	<!--
+	A link does not have to be text. It can be an image or any other HTML element.
+
+	By default, a link will appear like this (in all browsers):
+		An unvisited link is underlined and blue.
+		A visited link is underlined and purple.
+		An active link is underlined and red.
+	You can change the default colors, by using CSS.
+
+	-->
+
+</head>
+<body style="background-image:url('multimedia/back.jpg')"><!-- add image to html body background-->
+
+<a href="https://sites.google.com/site/samicsemist/home"> My page at google sites. </a><br>
+<a href="1_Hello_world.html">local link. </a><br>
+
+<!--
+	Target Attribute:
+		_blank - Opens the linked document in a new window or tab
+		_self - Opens the linked document in the same window/tab as it was clicked (this is default)
+		_top - Opens the linked document in the full body of the window
+		_parent - Opens the linked document in the parent frame
+		framename - Opens the linked document in a named frame
+-->
+
+<a href="https://sites.google.com/site/samicsemist/home" target="_blank"> 
+My page at google sites (open into a new tab). </a><br>
+
+<a href="https://sites.google.com/site/samicsemist/home" target="_self"> 
+My page at google sites (open within the same tab). </a><br><br>
+
+<a href="https://sites.google.com/site/samicsemist/home" target="_self">
+	<img src="multimedia/my_pic.jpg" alt="My pic from Linkedin" width="200" height="300"><br>
+	<p> Samiul Azam </p><br>
+</a>
+
+<!--HTML bookmarks are used to allow readers to jump to specific parts of a Web page.
+Bookmarks can be useful if your webpage is very long.-->
+<a href="#Sec1"> Jump to section 1. </a><br>
+
+<!-- Image from another server -->
+<img src="https://c.tadst.com/gfx/750w/partial-solar-eclipse-clouds.jpg?1" alt="partial-solar-eclipse-clouds">
+
+<br><br><br><br><br><br><br><!--Multiple line breaks-->
+<h2 id="Sec1"> Section 1: My Biography</h2>
+
+<!--Use the CSS float property to let the image float to the right or to the left of a text:-->
+<p style="background-image:url('multimedia/para-back.jpg')"> <!-- add image to para background-->
+	<img src="multimedia/my_pic.jpg" alt="Loading Images..." style="float:left;width:100px;height:150px;">
+	Samiul Azam received M.Sc. degree in Computer Science from the University of Calgary, Canada in July 2017. Before that, he received M.Sc degree in Computer Science and Engineering from Bangladesh University of Engineering and Technology (BUET), Bangladesh in 2014, and B.Sc. degree in Computer Science and Engineering from Military Institute of Science and Technology (MIST), Bangladesh in 2010. His research interests are focused on biometrics, image processing, machine learning, pattern recognition and data
+	analysis.
+</p>
+
+
+<br><br><br><br><br><!--Multiple line breaks-->
+<!--Use the <map> tag to define an image-map. An image-map is an image with clickable areas.-->
+<img src="multimedia/my_pic.jpg" usemap="#samiul" style="width:200px;height:300px;">
+<map name="samiul">
+	<area shape="rect" coords="0,0,100,150" href="3_Text_formatting.html">
+	<!--Top-left and Bottom-right corner-->
+	<area shape="circle" coords="150,225,50" href="2_headings_and_paragraphs.html"> 
+	<!--center location and radius-->
+</map>
+
+</body>
+</html>
