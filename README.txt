@@ -1,4 +1,4 @@
-Practice code for HTML.
+Practice codes for HTML and CSS.
 
 Editor used: sublime text. Create a file with extension .htm or .html.
 Download link for Sublime text: https://www.sublimetext.com/3
