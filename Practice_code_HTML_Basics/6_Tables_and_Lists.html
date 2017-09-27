@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tables and Lists</title>
+	
+	<style>
+		table{
+			color: black;
+    		border: 3px solid black;
+    		/*border-collapse: collapse;*/
+    		border-spacing: 2px; /* Border spacing specifies the space between the cells.*/
+    		background-color: #4286f4;
+		}
+		th{
+			background-color: yellow;
+			border: 1px solid black;
+			padding: 10px; /*Cell padding specifies the space between the cell content and its borders.*/
+			text-align: left;
+		}		
+		td{
+			border: 1px solid black;
+			padding: 5px;
+			text-align: left;
+		}
+	</style>
+
+</head>
+<body>
+
+<table style="width:50%">
+<caption>Table 1: Users information.</caption>
+<tr> <!--ROW 1: Header-->
+	<th>Name</th><!--Col headers-->	
+	<th colspan="2">Info</th> <!--Cells that Span Many Cols-->
+</tr>
+<!--The <td> elements are the data containers of the table.
+They can contain all sorts of HTML elements; text, images, 
+lists, other tables, etc.-->
+<tr> <!--ROW 2: Record entry-->
+	<td>Samiul Azam</td>	<!--Col 1 value-->	
+	<td>3496</td>			<!--Col 2 value-->
+	<td>Calgary</td>		<!--Col 3 value-->
+<tr>
+<tr>
+	<td>Nobin Rahman</td>	
+	<td>2591</td>
+	<td rowspan="2">California</td> <!--Cells that Span Many Rows-->
+</tr>
+<tr>
+	<td>Emam Hossain</td>	
+	<td>7281</td>
+</tr>
+</table>
+
+<h2>An Unordered HTML List</h2>
+<ul style="list-style-type:square"><!--Unordered List
+disc, circle or none-->
+  <li>U of C</li>
+  <li>BUET</li>
+  <li> MIST
+  		<ol> <!--list can be nested-->
+  			<li> Mirpur</li>
+  			<li> Dhaka</li>
+  		</ol>
+  </li>
+
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol type="i"><!--Ordered List
+type="1" or type="A" or type="a" or type="I" or type="i" or none-->
+  <li>U of C</li>
+  <li>BUET</li>
+  <li>MIST</li>
+</ol> 
+
+</body>
+</html>
