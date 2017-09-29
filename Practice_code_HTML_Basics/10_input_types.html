@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Types and attributes</title>
+</head>
+<body>
+
+<form action="server_page.asp" method="get">
+	Username:<br>
+	<input type="text" name="user" value="Samiul"><br>
+	Password:<br>
+	<input type="Password" name="pass" value="Wrongpassword"><br><br>
+	
+	<!--checkbox-->
+	<input type="checkbox" name="vehicle1" value="Happy"> I am Samiul<br>
+  	<input type="checkbox" name="vehicle2" value="Unhappy"> I am not Samiul<br><br> 
+
+	<!--HTML5 new types-->
+	Select Color: <input type="color" name="favcolor"><br><br>
+	Select date: <input type="date" name="selectdate" max="2020-12-31" min="2010-1-1"><br><br>
+	Email: <input email="date" name="email"><br><br><!--automatically validated when submitted.-->
+	Copies: <input type="number" name="quantity" min="0" max="50" step="10" value="10"><br><br>
+	Select Time: <input type="time" name="my_time"><br><br>
+	Range: -10 <input type="range" name="selectedvalue" min="-10" max="10"> +10 <br><br>
+	<input type="submit"><input type="reset"><br><br>
+	<!--there are many other types exist in HTML5-->
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Attributes</title>
+</head>
+<body>
+
+<form action="">
+	First name:<br>
+	<input type="text" name="firstname" value="Samiul" readonly><br>
+	Last name:<br>
+	<input type="text" name="firstname" value="Samiul" size="40" disabled><br>
+	Year:<br>
+	<input type="text" name="firstname" value="2000" maxlength="4" required><br>
+	<!--The required attribute specifies that an input field must be filled out 
+		before submitting the form-->
+	<input type="submit" value="Click to submit"><br>
+</form>
+
+<form id="F1" autocomplete="on">
+	<!--The autocomplete attribute specifies whether a form or input field 
+		should have autocomplete on or off. When autocomplete is on, the 
+		browser automatically completes the input values based on values 
+		that the user has entered before.-->
+
+	First name:<input type="text" name="fname" placeholder="First name"><br>
+  	Last name: <input type="text" name="lname" placeholder="Last name"><br>
+  	<!--Place holder: The hint is displayed in the input field before the user enters a value.-->
+
+
+  	E-mail: <input type="email" name="email" autocomplete="off" autofocus><br>
+  	<!--The autofocus attribute specifies that the input field should automatically 
+  		get focus when the page loads.-->
+  	Age: <input type="number" name="lname" form="F1"><br> <!--still part of the form-->
+
+  	<!--Select file from the local computer-->
+  	Select images: <input type="file" name="filename" multiple>
+
+</form>
+
+</body>
+</html>

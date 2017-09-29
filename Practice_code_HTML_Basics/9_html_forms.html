@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>html forms</title>
+</head>
+
+<body>
+<!--The HTML <form> element defines a form that is used to collect user input
+Form elements are different types of input elements, like text fields, checkboxes, 
+radio buttons, submit buttons, and more.-->
+
+<!--The action attribute defines the action to be performed when the form is 
+	submitted. Normally, the form data is sent to a web page on the server 
+	when the user clicks on the submit button.
+	
+	If the action attribute is omitted, the action is set to the current page.
+	
+	The method attribute specifies the HTTP method (GET or POST) to be used 
+	when submitting the form data. Always use POST if the form data contains 
+	sensitive or personal information. The POST method does not display the
+	submitted form data in the page address/URL field. POST has no size 
+	limitations, and can be used to send large amounts of data.-->
+
+<form action="/server_side.php" method="get">
+<!--The <input> element is the most important form element. The <input> element 
+	can be displayed in several ways, depending on the type attribute.-->
+	<!--The <fieldset> element is used to group related data in a form.
+	The <legend> element defines a caption for the <fieldset> element.-->
+	<fieldset>
+		  <legend>Information input box</legend>
+		  First name:<br>
+		  <input type="text" name="fname" value="Samiul"><br>
+		  Last name:<br>
+		  <input type="text" name="lname"><br>
+		  <!--Each input field must have a name attribute to be submitted. If the name
+		  	attribute is omitted, the data of that input field will not be sent at all.-->
+		  <!--Radio button-->
+		  Gender:<br>
+		  <input type="radio" name="gender" value="Male" checked>Male<br>
+		  <input type="radio" name="gender" value="Female">Female<br>
+		  <input type="radio" name="gender" value="Third Gender">Other<br>
+
+		  <!--Submit button: defines a button for submitting the form data to a form-handler.
+		  The form-handler is typically a server page with a script for processing input data.-->
+		  <input type="submit" value="Click to submit"><br>
+		  <!--See the change in the browser URL after clicking-->
+		  Select a year:
+		  <select> <!--Checkbox-->
+		  	<option value="1970">1970</option>
+		  	<option value="1980">1980</option>
+		  	<option value="1990" selected>1990</option>
+		  	<option value="2000">2000</option>
+		  </select>
+		  <br>
+		  
+		  Write something about you:<br><!--Text Area-->
+		  <textarea name="msg" rows="20" cols="50">Write here....
+		  </textarea>
+
+		  <br><!--Button-->
+		  <button type="button" onclick="alert('Hello World!')">Click Me!</button><br>
+
+		  <!--HTML5 new elements-->
+		  <input list="myoptions" name="data"> <!--The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.-->
+		  <datalist id="myoptions">
+		    <option value="Samiul">
+		    <option value="Emon">
+		    <option value="Nobin">
+		    <option value="Kaniz">
+		    <option value="Zeeshan">
+		  </datalist>
+	</fieldset>		
+  
+</form>
+
+
+</body>
+</html>
