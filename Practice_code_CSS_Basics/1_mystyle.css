@@ -1,0 +1,72 @@
+/* CSS is used to define styles for your web pages, 
+including the design, layout and variations in display 
+for different devices and screen sizes. 
+
+HTML was created to describe the content of a web page.
+
+A CSS rule-set consists of a selector and a declaration block.
+The selector points to the HTML element you want to style.
+The declaration block contains one or more declarations separated 
+by semicolons. Each declaration includes a CSS property name and 
+a value, separated by a colon. A CSS declaration always ends with
+a semicolon, and declaration blocks are surrounded by curly braces.
+
+CSS selectors are used to "find" (or select) HTML elements 
+based on their element name, id, class, attribute, and more.
+
+Selectors are:
+	1. Element selector (a HTML tag)
+	2. ID Selector (The id selector uses the id attribute of an HTML 
+	element to select a specific element.The id of an element should
+	be unique within a page, so the id selector is used to select one
+	unique element!)
+	3. Class selector (class selector selects elements with a specific class attribute.)
+	4. Element.class Selector
+	5. Group Selector
+
+*/
+
+p { /* element selector */
+    color: red; /*text color*/
+    text-align: center;
+}
+
+#samiul {/* id selector */
+    text-align: center;
+    color: green;
+}
+
+.center{ /*class selector */
+	text-align: center;
+    color: blue;
+}
+
+
+p.center { /* element + class selector */
+    color: purple; 
+    text-align: center;
+    border: 5px solid black;
+    border-left: 6px solid red;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 50px;
+    margin-left: 50px;
+    /*margin: auto*/;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    height: 150px;
+    width: 50%;
+    outline-style: ridge;
+    outline-color: yellow;
+    outline-width: 10px;
+    text-transform: lowercase;
+    font-family: Sans-serif;
+    font-size: 15px
+}
+
+h1, p { /* group selector selector */
+	color: tomato;
+    text-align: center;
+}

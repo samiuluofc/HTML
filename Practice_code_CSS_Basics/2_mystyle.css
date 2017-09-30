@@ -1,0 +1,90 @@
+
+/*a:hover MUST come after a:link and a:visited in the CSS
+definition in order to be effective. a:active MUST come 
+after a:hover in the CSS definition in order to be effective.*/
+a {
+	color: white;
+}
+
+a:link {
+	background-color: red;
+}
+
+a:visited {
+	background-color: blue;
+}
+
+a:hover {
+	background-color: green;
+}
+
+a:active {
+	background-color: yellow;
+}
+
+/*For the red button like link*/
+a#but1:link, a#but1:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none; /*Remove the underline*/
+    display: inline-block;
+}
+a#but1:hover, a#but1:active {
+    background-color: black;
+}
+
+/*List: ordered and unordered*/
+
+ul {
+    background: black;
+    padding: 20px;
+    margin-left: 35px;
+    list-style-type: upper-roman;
+    color: white;
+}
+
+ul li { /*parent: ul, child: li*/
+    background: red;
+    margin: 5px;
+    margin-left: 35px;
+}
+
+/*Table*/
+table {
+   border: 1px solid black;
+   border-collapse: collapse;
+   width: 70%; 
+   text-align: left;
+}
+
+th {
+    border: 0px solid black;
+    border-collapse: collapse;
+    width: 300px;
+    height: 50px;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+    background-color: tomato;
+}
+
+td {
+    border: 0px solid black;
+    border-collapse: collapse;
+    width: 300px;
+    height: 30px;
+    left-padding: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: gray;
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}
+
+
