@@ -6,7 +6,7 @@ a {
 	color: white;
 }
 
-a:link {
+a:link { /*:link is a pseudo-class*/
 	background-color: red;
 }
 
